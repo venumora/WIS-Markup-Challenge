@@ -1,0 +1,19 @@
+.header {
+    display: table;
+    margin: auto;
+    text-align: center;
+    text-transform: uppercase;
+    &__title {
+        margin: 0px;
+        font-weight: 400;     
+    }
+    &__subhead {
+        padding: 5px 20px;
+        border-top: 1px solid $headerBlack;
+        display: table;
+        margin: auto;
+        &__title {
+            font-weight: 100;
+        }
+    }
+}

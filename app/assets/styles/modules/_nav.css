@@ -1,0 +1,50 @@
+.navbar {
+    display: flex;
+    flex-direction: row;
+    flex-flow: flex-start;
+    justify-content: space-between;
+    align-items: stretch;
+    flex-wrap: wrap;
+    text-transform: uppercase;
+    text-align: center;
+    margin-top: 10px;
+    &__items {
+        display: flex;
+        flex-direction: row;
+        flex-flow: flex-start;
+        justify-content: space-between;
+        align-items: stretch;
+        flex-wrap: wrap;
+        @mixin atLarge {
+            border-right: 1px solid $mainWhite;
+        }
+        &__item {
+            float: left;
+            padding: 10px 15px;
+            background-color: $navBlack;
+            cursor: pointer;
+            flex-grow: 1;
+            &:hover {
+                background-color: $mainBlue;
+            }
+            &__link {
+                color: $mainWhite;
+                font-weight: 300;
+            }
+        }
+    }
+    &__header {
+        padding: 10px;
+        display: block;
+        text-align: center;
+        background-color: $mainBlue;
+        flex-grow: 2;
+        &:hover {
+            background-color: $navBlack;
+        }
+        &__link {
+            color: $mainWhite;
+            font-weight: 300;
+        }
+    }
+}
