@@ -7,7 +7,7 @@
     flex-wrap: wrap;
     text-transform: uppercase;
     text-align: center;
-    margin-top: 10px;
+    margin: 10px 10px; 
     &__items {
         display: flex;
         flex-direction: row;
@@ -15,12 +15,16 @@
         justify-content: space-between;
         align-items: stretch;
         flex-wrap: wrap;
+        border-bottom: 1px solid $mainWhite;
+        width: 100%;   
         @mixin atLarge {
             border-right: 1px solid $mainWhite;
+            border-bottom: none;       
+            width: auto;     
         }
         &__item {
             float: left;
-            padding: 10px 15px;
+            padding: 10px 10px;
             background-color: $navBlack;
             cursor: pointer;
             flex-grow: 1;

@@ -35,3 +35,8 @@ div {
 a {
     text-decoration: none;
 }
+
+input {
+    height: 100%;
+    width: 100%;
+}

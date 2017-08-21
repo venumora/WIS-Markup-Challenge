@@ -1,0 +1,23 @@
+.accordian {
+    margin-top: 18px;
+    border-top: 1px solid black;
+    border-bottom: 1px solid black;
+    padding: 10px 0px;
+    &__head {
+        margin-bottom: 10px;
+        &__link {
+            color: $mainDarkGrey;
+        }
+    }
+    &__body {
+        margin-bottom: 10px;
+        color: $grey;
+        padding-left: 20px;
+        padding-bottom: 20px;
+        border-bottom: 1px solid $lightGrey;
+        &:last-child {
+            padding-bottom: 0px;
+            border-bottom: none;
+        }
+    }
+}

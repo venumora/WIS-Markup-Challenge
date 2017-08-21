@@ -1,0 +1,25 @@
+.breadcrumb {
+    margin: 20px 10px 0px 10px;
+    display: table;
+    &__items {
+        &__item {
+            float: left;
+            padding-right: 10px;
+            &:after {
+                content: '>';
+                margin-left: 10px;
+                color: $grey;                
+            }
+            &:last-child:after {
+                content: '';
+            }
+            &__link {
+                text-decoration: none;
+                color: $grey;
+                &-active {
+                    color: $mainDarkGrey;
+                }
+            }
+        }
+    }
+}

@@ -1,0 +1,30 @@
+.purchase {
+    margin-top: 12px;
+    &__cost {
+        font-weight: 400;
+    }
+    &__quantity {
+        height: 30px;
+        width: 70px;
+        margin-top: 12px;
+        &-number {
+            text-align: center;
+        }
+    }
+    &__submit {
+        height: 40px;
+        width: 150px;
+        margin-top: 12px;        
+        &-button {
+            color: $mainWhite;
+            background-color: $redButton;
+            border: 2px solid $redButton;
+            text-transform: uppercase;
+            font-weight: bold;
+            &:hover, &:focus {
+                background-color: $mainBlue;     
+                 border: 2px solid $mainBlue;           
+            }
+        }
+    }
+}

@@ -4,4 +4,11 @@
 @import "base/_global";
 
 @import "modules/_header.css";
-@import "modules/_nav.css"
+@import "modules/_nav.css";
+@import "modules/_breadcrumb.css";
+@import "modules/_row.css";
+@import "modules/_product.css";
+@import "modules/_preview.css";
+@import "modules/_details.css";
+@import "modules/_purchase.css";
+@import "modules/_accordian.css";

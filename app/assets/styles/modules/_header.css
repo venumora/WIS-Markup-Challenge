@@ -5,7 +5,7 @@
     text-transform: uppercase;
     &__title {
         margin: 0px;
-        font-weight: 400;     
+        font-weight: 400; 
     }
     &__subhead {
         padding: 5px 20px;
