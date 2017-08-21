@@ -4,14 +4,167 @@
 <head>
     <title>Get started</title>
     <link rel="icon" type="image/x-icon" href="favicon.ico">
-    <link rel="stylesheet" href="assets/styles/styles-2bc4864267.css"/>
+    <link rel="stylesheet" href="assets/styles/styles-69d74d4db0.css"/>
 </head>
 
 <body>
+    <header>
+        <div class="header">
+            <h1 class="header__title">
+                <p>Williams</p>
+                <p>Sonoma</p>
+            </h1>
+            <div class="header__subhead">
+                <h5 class="header__subhead__title">California</h5>
+            </div>
+        </div>
+    </header>
+    <nav class="navbar">
+        <ul class="navbar__items">
+            <li class="navbar__items__item">
+                <a class="navbar__items__item__link" href="#">Cookware</a>
+            </li>
+            <li class="navbar__items__item">
+                <a class="navbar__items__item__link" href="#">Cook's tools</a>
+            </li>
+            <li class="navbar__items__item">
+                <a class="navbar__items__item__link" href="#">Cutlery</a>
+            </li>
+            <li class="navbar__items__item">
+                <a class="navbar__items__item__link" href="#">Electrics</a>
+            </li>
+            <li class="navbar__items__item">
+                <a class="navbar__items__item__link" href="#">Bakeware</a>
+            </li>
+            <li class="navbar__items__item">
+                <a class="navbar__items__item__link" href="#">Food</a>
+            </li>
+            <li class="navbar__items__item">
+                <a class="navbar__items__item__link" href="#">Tabletop & bar</a>
+            </li>
+            <li class="navbar__items__item">
+                <a class="navbar__items__item__link" href="#">Homekeeping</a>
+            </li>
+            <li class="navbar__items__item">
+                <a class="navbar__items__item__link" href="#">Outdoor</a>
+            </li>
+            <li class="navbar__items__item">
+                <a class="navbar__items__item__link" href="#">Sale</a>
+            </li>
+        </ul>
+        <div class="navbar__header">
+            <a href="#" class="navbar__header__link">Williams-Sonoma home</a>
+        </div>
+    </nav>
     <section id="main">
-        <h1>Get started</h1>
+        <nav class="breadcrumb">
+            <ul class="breadcrumb__items">
+                <li class="breadcrumb__items__item">
+                    <a href="#" class="breadcrumb__items__item__link">Home</a>
+                </li>
+                <li class="breadcrumb__items__item">
+                    <a href="#" class="breadcrumb__items__item__link">Housekeeping</a>
+                </li>
+                <li class="breadcrumb__items__item">
+                    <a href="#" class="breadcrumb__items__item__link">Aprons</a>
+                </li>
+                <li class="breadcrumb__items__item">
+                    <a href="#" class="breadcrumb__items__item__link">Adult Aprons</a>
+                </li>
+                <li class="breadcrumb__items__item">
+                    <a href="#" class="breadcrumb__items__item__link-active">Williams-Sonoma Classic Apron, French Blue</a>
+                </li>
+            </ul>
+        </nav>
+        <section id="product" class="product">
+            <div class="row row-gutters">
+                <div class="row__medium-8">
+                    <div class="preview">
+                        <div class="preview__large">
+                            <img id="largeImageContainer" src="assets/images/product-large-a.jpg" />
+                        </div>
+                        <div class="preview__small">
+                            <ul class="preview__small__items">
+                                <li class="preview__small__items__item">
+                                    <a onclick="changePicture(event)" data-large-img-path="assets/images/product-large-a.jpg" class="show active-picture" href="#"><img src="assets/images/product-small-a.jpg" /></a>
+                                </li>
+                                <li class="preview__small__items__item">
+                                    <a onclick="changePicture(event)" data-large-img-path="assets/images/product-large-b.jpg" class="show" href="#"><img src="assets/images/product-small-b.jpg" /></a>
+                                </li>
+                                <li class="preview__small__items__item">
+                                    <a onclick="changePicture(event)" data-large-img-path="assets/images/product-large-c.jpg" class="show" href="#"><img src="assets/images/product-small-c.jpg" /></a>
+                                </li>
+                                <li class="preview__small__items__item">
+                                    <a onclick="changePicture(event)" data-large-img-path="assets/images/product-large-d.jpg" class="show" href="#"><img src="assets/images/product-small-d.jpg" /></a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <div class="row__medium-4">
+                    <div class="details">
+                        <h2 class="details__title">Williams-Sonoma Classic Apron, French Blue</h2>
+                        <div class="details__description">
+                            A generously sized apron is a necessity in any kitchen, and ours will brighten yours with lively color. Sewn of thick cotton,
+                            it can be personalized or monogrammed with up to nine characters, all the same height, embroidered
+                            in your choice of color. An apron of this quality makes a welcome gift for any cook.
+                            <ul class="details__features">
+                                <li class="details__features__item">Durable 100% cotton construction</li>
+                                <li class="details__features__item">Adjustable neckband ensures a good fit</li>
+                                <li class="details__features__item">Roomy front pockets hold small tools.</li>
+                                <li class="details__features__item">Machine-wash</li>
+                            </ul>
+                        </div>
+                        <form id="purchase" class="purchase">
+                            <h2 class="purchase__cost">$19.95</h2>
+                            <div class="purchase__quantity">
+                                <input class="purchase__quantity-number" type="number" name="quantity" step="1">
+                            </div>
+                            <div class="purchase__submit">
+                                <input class="purchase__submit-button" type="submit" value="Add to cart &#9658;" />
+                            </div>
+                        </form>
+                        <div class="accordian">
+                            <div class="accordian__head">
+                                <a class="accordian__head__link" href="#">&#9660; Expanded</a>
+                            </div>
+                            <div class="accordian__body">
+                                <p>This section is expanded. This section can be collapsed by clicking on the “Expanded” text.
+                                    This section is expanded. This section can be collapsed by clicking on the “Expanded”
+                                    text.
+                                </p>
+                            </div>
+                            <div class="accordian__head">
+                                <a class="accordian__head__link" href="#">&#9658; Collapsed</a>
+                            </div>
+                            <div class="accordian__body accordian-hide hide">
+                                <p>This section is expanded. This section can be collapsed by clicking on the “Expanded” text.
+                                    This section is expanded. This section can be collapsed by clicking on the “Expanded”
+                                    text.
+                                </p>
+                            </div>
+                            <div class="accordian__head">
+                                <a class="accordian__head__link" href="#">&#9658; Collapsed</a>
+                            </div>
+                            <div class="accordian__body accordian-hide hide">
+                                <p>This section is expanded. This section can be collapsed by clicking on the “Expanded” text.
+                                    This section is expanded. This section can be collapsed by clicking on the “Expanded”
+                                    text.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
     </section>
-    <script src="assets/scripts/App-5b63c6d98d.js"></script>    
+    <div id="addToCartModal" class="modal">
+        <div class="modal__content">
+            <a href="#" id="closeModal" class="modal__close">&times;</a>
+            <h1 id="modalMessage"></h1>
+        </div>
+    </div>
+    <script src="assets/scripts/App-5b7cb57fed.js"></script>
 </body>
 
 </html>

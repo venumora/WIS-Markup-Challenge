@@ -15,6 +15,9 @@
                     width: 100px;
                     height: 100px;
                 }
+                & .active-picture {
+                    border: 2px solid $mainDarkGrey;
+                }
             }
         }
     }

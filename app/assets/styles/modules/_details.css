@@ -1,4 +1,8 @@
 .details {
+    margin-top: 40px;
+    @mixin atMedium {
+        margin-top: 0px;        
+    }
     &__title {
         font-weight: 400;
     }
